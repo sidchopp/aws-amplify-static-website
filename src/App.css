@@ -1,3 +1,56 @@
-.App {
-  text-align: center;
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap");
+
+html {
+  font-size: 100%;
+}
+:root {
+  --primary-500: #2cb1bc;
+  --max-width: 1120px;
+  --fixed-width: 500px;
+  --nav-height: 6rem;
+}
+
+.container {
+  width: var(--fluid-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.full-page {
+  min-height: 100vh;
+}
+nav {
+  width: var(--fluid-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+}
+.page {
+  min-height: calc(100vh - var(--nav-height));
+  display: grid;
+  align-items: center;
+  margin-top: -3rem;
+}
+h1 {
+  font-weight: 700;
+  span {
+    color: var(--primary-500);
+  }
+}
+p {
+  color: var(--grey-600);
+}
+.main-img {
+  display: none;
+}
+@media (min-width: 992px) {
+  .page {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+  .main-img {
+    display: block;
+  }
 }
