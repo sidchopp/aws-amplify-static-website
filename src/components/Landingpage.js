@@ -9,7 +9,13 @@ const Landingpage = () => {
           About Me
         </h1>
         <p>
-          I'm Sid. I was born in India and moved to Calgary🍁 in 2019. As a true lover of Science and Technology, I love building and deploying cool Web apps that accomplish business goals (like this App is deployed using AWS Amplify) and have a genuine passion for Physics. In my free time, I love to travel & explore.
+          I'm Sid. I was born in India and moved to Calgary🍁 in 2019. As a true lover of Science & Technology, I love building and deploying cool Web apps that accomplish business goals (like this App is deployed using
+          <span>
+            {' '}<b><a href="https://aws.amazon.com/amplify/" target="_blank" rel="noreferrer">
+              AWS Amplify
+            </a></b>
+          </span>
+          ). I have a passion for Physics and in my free time I love to travel & explore.
         </p>
         <a href='https://sid-projects.netlify.app/' target="_blank" rel="noreferrer">
           <button
